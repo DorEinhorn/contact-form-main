@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Form</title>
+</head>
+<body>
+  <div id="successMessage" class="success-message">
+    <p><strong>Message Sent!</strong> Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  <form id="contactForm">
+    <h1>Contact Us</h1>
+    <div class="names">
+      <div class="form_item">
+        <label for="fname">First Name *</label>
+        <input type="text" name="fname" id="fname">
+        <p class="error-message">This field is required</p>
+      </div>
+      <div class="form_item">
+        <label for="lname">Last Name *</label>
+        <input type="text" name="lname" id="lname">
+        <p class="error-message">This field is required</p>
+      </div>
+    </div>
+    <div class="form_item">
+      <label for="email">Email Address *</label>
+      <input type="email" name="email" id="email">
+      <p class="error-message">Please enter a valid email address</p>
+    </div>
+    <div class="form_item">
+      <label>Query Type *</label>
+      <div class="query_type">
+        <div class="radio_item">
+          <input type="radio" name="query" id="general" value="General Enquiry">
+          <label for="general" class="radio_label">General Enquiry</label>
+        </div>
+        <div class="radio_item">
+          <input type="radio" name="query" id="support" value="Support Request">
+          <label for="support" class="radio_label">Support Request</label>
+        </div>
+      </div>
+      <p class="error-message">Please select a query type</p>
+    </div>
+    <div class="form_item">
+      <label for="message">Message *</label>
+      <textarea name="message" id="message"></textarea>
+      <p class="error-message">This field is required</p>
+    </div>
+    <div class="checkbox_item">
+      <input type="checkbox" name="consent" id="consent">
+      <label for="consent">I consent to being contacted by the team *</label>
+      <p class="error-message">To submit this form, please consent to being contacted</p>
+    </div>
+    <div class="form_item">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
